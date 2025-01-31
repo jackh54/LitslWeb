@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LITSL.NET - The Ultimate Minecraft Server Experience. Join now!">
+    <title>LITSL.NET - Minecraft Server</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">LITSL.NET</div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#status">Status</a></li>
+                <li><a href="https://store.litsl.net">Store</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to LITSL.NET</h1>
+        <p>The Ultimate Minecraft Experience</p>
+        <button class="cta" onclick="openPopup()">Join Now</button>
+        <div class="player-count">Players Online: <span id="playerCount">Loading...</span></div>
+    </section>
+
+    <section id="why-play" class="why-play">
+        <h2>Why Play LITSL?</h2>
+        <div class="why-features">
+            <div class="feature-box">
+                <i class="fas fa-clock"></i>
+                <p>24/7 Uptime</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-comments"></i>
+                <p>Active Discord</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-users"></i>
+                <p>Over 1k Unique Players</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-sync-alt"></i>
+                <p>Weekly Updates</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="join-discord" class="join-discord">
+        <h2>Join Our Discord</h2>
+        <p>Stay connected with the community and get the latest updates.</p>
+        <a href="https://discord.gg/litsl" class="discord-btn"><i class="fab fa-discord"></i> Join Discord</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LITSL.NET. All rights reserved.</p>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>How to Join LITSL.NET</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/a1PF5VGNC5M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="instructions">
+                <h3>Java Edition</h3>
+                <p>1. Open Minecraft Java Edition.</p>
+                <p>2. Click on "Multiplayer".</p>
+                <p>3. Click on "Add Server".</p>
+                <p>4. Enter "litsl.net" as the server address.</p>
+                <p>5. Click "Done" and join the server.</p>
+                <h3>Bedrock Edition</h3>
+                <p>1. Open Minecraft Bedrock Edition.</p>
+                <p>2. Click on "Play".</p>
+                <p>3. Go to the "Servers" tab.</p>
+                <p>4. Scroll down and click on "Add Server".</p>
+                <p>5. Enter "litsl.net" as the server address and "19132" as the port.</p>
+                <p>6. Click "Save" and join the server.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
