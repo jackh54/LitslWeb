@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
-            playerCountElement.textContent = `Current Players: ${data.playercount}`;
+            playerCountElement.textContent = `${data.playercount}`;
         } catch (error) {
             console.error("Failed to fetch player count:", error);
             playerCountElement.textContent = "Player count unavailable";
