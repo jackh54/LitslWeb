@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     fetchPlayerCount();
-    setInterval(fetchPlayerCount, 30000);
+    setInterval(fetchPlayerCount, 300000);
     const revealElements = document.querySelectorAll(".feature-box");
     function revealOnScroll() {
         revealElements.forEach((el) => {
