@@ -62,7 +62,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('background.jpg') no-repeat center center/cover;
+    /* background: url('background.jpg') no-repeat center center/cover; */
     position: relative;
     animation: fadeIn 1.5s ease-in-out;
 }
