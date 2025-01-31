@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Sticky Navbar Effect
     const navbar = document.querySelector(".navbar");
     window.addEventListener("scroll", () => {
         if (window.scrollY > 50) {
@@ -8,10 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
             navbar.style.background = "rgba(14, 227, 11, 0.9)";
         }
     });
-
-    // Fetch Player Count
     const playerCountElement = document.getElementById("playerCount");
-
     async function fetchPlayerCount() {
         try {
             const response = await fetch("https://api.litsl.net/api/playercount");
@@ -25,13 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
             playerCountElement.textContent = "Player count unavailable";
         }
     }
-
     fetchPlayerCount();
-    setInterval(fetchPlayerCount, 30000); // Update every 30 seconds
-
-    // Reveal Animation on Scroll
+    setInterval(fetchPlayerCount, 30000);
     const revealElements = document.querySelectorAll(".feature-box");
-
     function revealOnScroll() {
         revealElements.forEach((el) => {
             const position = el.getBoundingClientRect().top;
@@ -41,11 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-
     window.addEventListener("scroll", revealOnScroll);
     revealOnScroll();
-
-    // Hamburger Menu Toggle
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("nav-links");
 
@@ -53,8 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks.classList.toggle("active");
     });
 });
-
-// Popup Modal Functions
 function openPopup() {
     document.getElementById("popup").style.display = "block";
     document.body.classList.add("no-scroll");

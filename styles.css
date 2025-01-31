@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -8,7 +7,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -57,7 +55,6 @@ body {
     z-index: 1001;
 }
 
-/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
@@ -84,7 +81,6 @@ body {
     animation: fadeIn 1.5s ease-in-out 0.5s forwards;
 }
 
-/* CTA Button */
 .cta {
     margin-top: 20px;
     padding: 15px 30px;
@@ -102,14 +98,12 @@ body {
     box-shadow: 0 0 15px #0ee30b;
 }
 
-/* Player Count */
 .player-count {
     margin-top: 15px;
     font-size: 1.2rem;
     color: #0ee30b;
 }
 
-/* Why Play Section */
 .why-play {
     text-align: center;
     padding: 50px 20px;
@@ -157,7 +151,6 @@ body {
     font-size: 1.2rem;
 }
 
-/* Join Discord Section */
 .join-discord {
     text-align: center;
     padding: 50px 20px;
@@ -190,7 +183,6 @@ body {
     box-shadow: 0 0 15px #7289da;
 }
 
-/* Popup Modal */
 .popup {
     display: none;
     position: fixed;
@@ -221,7 +213,7 @@ body {
 
 .popup-content .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
     width: 100%;
@@ -264,12 +256,10 @@ body {
     cursor: pointer;
 }
 
-/* Prevent double scrollbar */
 body.no-scroll {
     overflow: hidden;
 }
 
-/* Animations */
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -285,7 +275,6 @@ body.no-scroll {
     100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
