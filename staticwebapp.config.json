@@ -1,19 +1,6 @@
 {
-  "routes": [
-    {
-      "route": "/404.html",
-      "statusCode": 404
-    },
-    {
-      "route": "/{*path}",
-      "rewrite": "/{path}.html"
-    }
-  ],
   "navigationFallback": {
-    "rewrite": "/index.html",
-    "exclude": ["/404.html"]
-  },
-  "mimeTypes": {
-    ".html": "text/html"
+    "rewrite": "/404.html",
+    "statusCode": 404
   }
 }
